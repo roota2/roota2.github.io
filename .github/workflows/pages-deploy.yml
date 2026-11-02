@@ -54,7 +54,7 @@ jobs:
         run: |
           bundle exec htmlproofer _site \
             \-\-disable-external \
-            --disable-checks Links \
+            --checks-to-ignore Links \
             \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
             --allow-hash-href \
             --allow-missing-href \
