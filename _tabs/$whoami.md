@@ -52,15 +52,15 @@ layout: whoami
     <div class="whoami-timeline">
     
       <article class="whoami-entry">
-        <h3>Deloitte</h3>
-        <p>Intern</p>
+        <h2><b>Deloitte</b></h2>
+        <h3>Intern</h3>
         <p>Jan 2025 - Jun 2025</p>
         <p>Bengaluru, Karnataka, India</p>
       </article>
       
       <article class="whoami-entry">
-        <h2>Deloitte</h2>
-        <p>Consultant</p>
+        <h2><b>Deloitte</b></h2>
+        <h3>Consultant</h3>
         <p>Jul 2025 - Dec 2025</p>
         <p>Bengaluru, Karnataka, India</p>
         <small>Delivered L1 security monitoring and incident triage in an MSSP-based SOC environment. Investigated and validated security alerts, supported incident escalation, and recommended detection-rule fine-tuning to improve alert accuracy and reduce false positives.</small>
