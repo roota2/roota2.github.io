@@ -1,0 +1,172 @@
+---
+layout: default
+---
+
+{% include lang.html %}
+
+{% assign research_posts = site.posts
+  | where_exp: 'post', 'post.categories contains "Threat Research"'
+  | where_exp: 'post', 'post.hidden != true'
+%}
+
+{% assign featured_post = research_posts.first %}
+{% assign remaining_posts = research_posts | slice: 1, 100 %}
+
+<div class="threat-research-page">
+
+  <!-- HERO -->
+  <section class="tr-hero">
+    <div class="tr-hero-label">
+      <span class="tr-status-dot"></span>
+      ROOTA2 / THREAT INTELLIGENCE
+    </div>
+
+    <h1>Threat Research<span class="tr-accent">.</span></h1>
+
+    <p>
+      Tracking adversaries. Investigating infrastructure.
+      Uncovering the signals behind cyber threats.
+    </p>
+
+    <div class="tr-hero-bottom">
+      <span>OSINT · CTI · MALWARE · DFIR</span>
+      <span>{{ research_posts.size }} RESEARCH REPORTS</span>
+    </div>
+  </section>
+
+  <!-- FEATURED RESEARCH -->
+  {% if featured_post %}
+  <section class="tr-featured-section">
+
+    <div class="tr-section-heading">
+      <span>01 / FEATURED RESEARCH</span>
+      <span class="tr-line"></span>
+    </div>
+
+    <article class="tr-featured-card">
+      <a href="{{ featured_post.url | relative_url }}" class="tr-featured-link">
+
+        <div class="tr-featured-image">
+          {% if featured_post.image.path %}
+            <img
+              src="{{ featured_post.image.path | relative_url }}"
+              alt="{{ featured_post.title }}"
+              loading="lazy">
+          {% else %}
+            <div class="tr-image-placeholder">
+              <span>ROOTA2 // THREAT INTEL</span>
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="tr-featured-content">
+
+          <div class="tr-meta">
+            <span class="tr-category">FEATURED REPORT</span>
+            <span>{{ featured_post.date | date: "%d %b %Y" }}</span>
+          </div>
+
+          <h2>{{ featured_post.title }}</h2>
+
+          <p>
+            {% if featured_post.description %}
+              {{ featured_post.description }}
+            {% else %}
+              {{ featured_post.excerpt | strip_html | truncate: 220 }}
+            {% endif %}
+          </p>
+
+          <div class="tr-read-more">
+            READ RESEARCH <span>→</span>
+          </div>
+
+        </div>
+      </a>
+    </article>
+
+  </section>
+  {% endif %}
+
+  <!-- RESEARCH FEED -->
+  <section class="tr-feed-section">
+
+    <div class="tr-section-heading">
+      <span>02 / RESEARCH ARCHIVE</span>
+      <span class="tr-line"></span>
+    </div>
+
+    {% if remaining_posts.size > 0 %}
+
+      <div class="tr-research-grid">
+
+        {% for post in remaining_posts %}
+
+
+	<article class="tr-research-item">
+
+	  <!-- IMAGE ABOVE THE CONTENT CARD -->
+	  <a href="{{ post.url | relative_url }}" class="tr-card-image">
+	    {% if post.image.path %}
+	      <img
+		src="{{ post.image.path | relative_url }}"
+		alt="{{ post.title }}"
+		loading="lazy">
+	    {% else %}
+	      <div class="tr-image-placeholder">
+		<span>ROOTA2 // CTI</span>
+	      </div>
+	    {% endif %}
+	  </a>
+
+	  <!-- CONTENT CARD -->
+	  <div class="tr-research-card">
+	    <a href="{{ post.url | relative_url }}" class="tr-card-link">
+
+	      <div class="tr-card-content">
+
+		<div class="tr-meta">
+		  <span class="tr-category">THREAT RESEARCH</span>
+		  <span>{{ post.date | date: "%d %b %Y" }}</span>
+		</div>
+
+		<h3>{{ post.title }}</h3>
+
+		<p>
+		  {% if post.description %}
+		    {{ post.description }}
+		  {% else %}
+		    {{ post.excerpt | strip_html | truncate: 150 }}
+		  {% endif %}
+		</p>
+
+		<div class="tr-read-more">
+		  EXPLORE REPORT <span>→</span>
+		</div>
+
+	      </div>
+
+	    </a>
+	  </div>
+
+	</article>
+
+
+        {% endfor %}
+
+      </div>
+
+    {% else %}
+
+      <div class="tr-empty-state">
+        <span class="tr-status-dot"></span>
+        <h3>Awaiting new intelligence...</h3>
+        <p>
+          Research reports will appear here as they are published.
+        </p>
+      </div>
+
+    {% endif %}
+
+  </section>
+
+</div>
