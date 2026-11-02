@@ -1,39 +1,43 @@
-# Chirpy Starter
+# 🟢 ROOTA2
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+<p align="center">
+  <img src="https://img.shields.io/badge/Cybersecurity-Research-9fef00?style=for-the-badge&labelColor=0a0f0d" />
+  <img src="https://img.shields.io/badge/DFIR-Notes-9fef00?style=for-the-badge&labelColor=0a0f0d" />
+  <img src="https://img.shields.io/badge/CTI-Writeups-9fef00?style=for-the-badge&labelColor=0a0f0d" />
+</p>
 
-A minimal, ready-to-use template for creating a blog with the [**Chirpy**][chirpy] Jekyll theme. Get up and running in minutes with all critical files pre-configured.
+<p align="center">
+  <i>My personal space for cybersecurity notes, research, and technical documentation.</i>
+</p>
 
-## Why This Starter Exists
+---
 
-When installing Chirpy through [RubyGems.org][gem], Jekyll can only read a subset of theme files (`_data`, `_layouts`, `_includes`, `_sass`, `assets`) and limited `_config.yml` options from the gem. As a result, users cannot enjoy the full out-of-the-box experience that Chirpy offers.
+## 🗂️ What's Inside
 
-To unlock all features, the following files must be present in your Jekyll site:
+| Area | Description |
+|:---|:---|
+| 🕵️ **Threat Research & CTI** | Research notes and threat intelligence blogs |
+| 🔬 **DFIR** | Digital forensics and incident response notes |
+| 🚩 **CTF Writeups** | Write-ups from CTF challenges and labs |
+| 📚 **Study Notes** | Technical topics explored while learning |
+| ⚙️ **Projects** | Personal projects and experiments |
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+---
 
-This starter bundles those files from the latest **Chirpy** release along with a [CD][CD] workflow, so you can start writing immediately.
+## 🧑‍💻 About
 
-## Usage
+This repository serves as my personal knowledge base — a place to document what I learn, explore technical topics, and maintain research notes.
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+No claims, just documentation, research, and continuous learning.
 
-## Contributing
+---
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+## 🌐 Website
 
-## License
+<p align="center">
+  <a href="https://roota2.github.io">
+    <img src="https://img.shields.io/badge/Visit-ROOTA2%20Portfolio-9fef00?style=for-the-badge&logo=github&logoColor=black" />
+  </a>
+</p>
 
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+---
