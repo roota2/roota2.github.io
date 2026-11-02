@@ -1,4 +1,4 @@
-# 🟢 ROOTA2
+# 🟢
 
 <p align="center">
   <img src="https://img.shields.io/badge/Cybersecurity-Research-9fef00?style=for-the-badge&labelColor=0a0f0d" />
