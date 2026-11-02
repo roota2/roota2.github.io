@@ -59,7 +59,7 @@ layout: whoami
       </article>
       
       <article class="whoami-entry">
-        <h3>Deloitte</h3>
+        <h2>Deloitte</h2>
         <p>Consultant</p>
         <p>Jul 2025 - Dec 2025</p>
         <p>Bengaluru, Karnataka, India</p>
