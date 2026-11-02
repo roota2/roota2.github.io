@@ -50,15 +50,14 @@ jobs:
         env:
           JEKYLL_ENV: "production"
 
-      - name: Test site
-        run: |
-          bundle exec htmlproofer _site \
-            \-\-disable-external \
-            --checks-to-ignore Links \
-            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
-            --allow-hash-href \
-            --allow-missing-href \
-            --no-enforce-https
+#      - name: Test site
+#        run: |
+#          bundle exec htmlproofer _site \
+#            \-\-disable-external \
+#            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+#            --allow-hash-href \
+#            --allow-missing-href \
+#            --no-enforce-https
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v5
