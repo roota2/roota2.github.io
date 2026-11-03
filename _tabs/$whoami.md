@@ -63,7 +63,7 @@ layout: whoami
         <h3>Consultant</h3>
         <p>Jul 2025 - Dec 2025</p>
         <p>Bengaluru, Karnataka, India</p>
-        <small>Delivered L1 security monitoring and incident triage in an MSSP-based SOC environment. Investigated and validated security alerts, supported incident escalation, and recommended detection-rule fine-tuning to improve alert accuracy and reduce false positives.</small>
+        <small>Performed malware analysis, SOC alert investigation, and incident response. Conducted alert triage, supported incident handling, and fine-tuned detection rules to improve alert accuracy and reduce false positives.</small>
       </article>
 
 
