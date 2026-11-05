@@ -1,24 +1,22 @@
 ---
-title: "FindTheCulp - Testing writeup"
-date: 2026-11-01 10:00:00 +0530
+title: "FindTheCulp: Unraveling the Exfiltration Trail"
+date: 2025-02-19 10:00:00 +0530
 categories: [CTF Writeups]
 tags: [ctf, Exfiltration, privilege-escalation]
-image: /assets/Post/FindTheCulp/Man.jpg
+image: /assets/Post/FindTheCulp/FindTheCulp.png
 by: roota2
 ---
 
-# Misc
+# Statement
 
 Ex filtration happened in one endpoint 
-
 It's good to be you guys, if you get hacked, report it to the incident response team. who do we report it to?
-
 There are 3 part flags in this challenge
 
 [https://s.id/guaJ0](https://s.id/guaJ0)
 
 - There were two evidence files one is pcap and another one is disk image.
-- From initial examination i found that there were a exe binary is used to perform this exfiltration and confirmed with pcap aswell
+- From initial examination i found that there were a exe binary which is used to perform this exfiltration and confirmed with pcap aswell
 
 ![image.png](/assets/Post/FindTheCulp/image.png)
 

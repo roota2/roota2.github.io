@@ -1,12 +1,12 @@
 ---
-title: "Nitroba Case - Testing Intell page"
-date: 2026-11-02 10:00:00 +0530
-categories: [Threat Research]
-tags: [threat-intelligence, c2, osint, infrastructure-analysis]
-image: /assets/Post/FindTheCulp/Man.jpg
-author: roota2
+title: "Nitroba Case"
+date: 2024-02-14 10:00:00 +0530
+categories: [DFIR]
+tags: [Network Forensics, PCAP, TempMail]
+image: /assets/Post/Nitroba Case/Nitroba.png
+by: roota2
 ---
-# Case-3-2008 Nitroba University Harassment Scenario - Testing website
+# Nitroba University Harassment Scenario
 
 ---
 
@@ -59,8 +59,8 @@ Jenny Kant
 
 **There is only one host connected to the particular network
 IP : 192.168.15.4**
-    
-    ![Pasted image 20240130121442.png](/assets/Post/Nitroba Case/Pasted_image_20240130121442.png)
+
+![Pasted image 20240130121442.png](/assets/Post/Nitroba Case/Pasted_image_20240130121442.png)
     
 2. Find who sent email to [lilytuckrige@yahoo.com](mailto:lilytuckrige@yahoo.com)
 - Filtering the sus IP and loading in to network miner to mine info from the packets
