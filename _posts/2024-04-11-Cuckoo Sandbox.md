@@ -1,5 +1,5 @@
 ---
-title: "FindTheCulp: Unraveling the Exfiltration Trail"
+title: "Cuckoo Sandbox Installation"
 date: 2024-04-11 10:00:00 +0530
 categories: [DFIR]
 tags: [Sandbox, Malware Analysis]
